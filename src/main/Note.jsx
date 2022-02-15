@@ -1,13 +1,14 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import notes from "./notes"
 
+function Notes(props){
+    return(
+      <div className="note">
+        <h1 className="note_title">{props.title}</h1>
+        <p className="note_content">{props.content}</p>
+      </div>
+    )
+  }
 
-function Notes(){
-  return(
-    <div className="note">
-      <h1 className="note_title">This is the note title</h1>
-      <p className="note_content">This is the note</p>
-    </div>
-  )
-}
 export default Notes 
