@@ -7,10 +7,14 @@ import CreateArea from "./main/CreateArea";
 
 
 function App() {
+  function addNote(note){
+  }
   return (
     <div className="App">
       <Header />
-      <CreateArea />
+      <CreateArea 
+          onAdd={addNote}
+      />
        <Notes key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
