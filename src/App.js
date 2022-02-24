@@ -3,13 +3,15 @@ import Header from "./main/Header";
 import Notes from "./main/Note";
 import Footer from "./main/Footer";
 import notes from "./main/notes";
+import CreateArea from "./main/CreateArea";
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {notes.map((noteItem) => <Notes title={noteItem.title} content={noteItem.content} />
-      )}
+      <CreateArea />
+       <Notes key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
   );
