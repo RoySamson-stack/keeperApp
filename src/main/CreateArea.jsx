@@ -19,6 +19,7 @@ setNote(prevNote =>{
 }
 function submitNote(event){
   props.onAdd(note)
+  console.log(note) 
   event.preventDefault();
 
 
