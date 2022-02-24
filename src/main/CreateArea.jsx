@@ -19,7 +19,10 @@ setNote(prevNote =>{
 }
 function submitNote(event){
   props.onAdd(note)
-  console.log(note) 
+  setNote({
+    title: "",
+    content: " "
+  })
   event.preventDefault();
 
 
@@ -32,7 +35,8 @@ function submitNote(event){
         <textarea 
         onChange={handleChange} 
         name="content" 
-        value={note.content} placeholder="Take a note..." 
+        value={note.content} 
+        placeholder="content" 
         rows="3" />
         <button onClick={submitNote}>Add</button>
       </form>
