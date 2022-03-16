@@ -1,6 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
-import notes from "./notes"
+
 
 function Notes(props){
 function handleClick(){
